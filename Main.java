@@ -47,12 +47,13 @@ public class Main {
         hobbyList.put(pers1, List.of(hobby1));
         hobbyList.put(pers2, List.of(hobby2));
 
-        for (Hobby hobby : hobbies) {
-            System.out.println("Hobby: " + hobby.getName());
-        }
-
+            for (Hobby hobby : hobbies) {
+                System.out.println( hobby.getName());
+                for (Address address : hobby.getAddresses()) {
+                    System.out.println(address.getCountry());
+                }
+            }
     }
+
 }
-
-
 
